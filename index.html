@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>电影推荐</title>
+	<!-- 自定义主题文件  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- 自定义主题文件  -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!-- 滚动-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!--//end-smoth-scrolling-->
+	<!--pop-up-->
+	<script src="js/menu_jquery.js"></script>
+	<!--//pop-up-->
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul>
+					<li><a href="account.html" style="margin-left: 55px;">注册</a></li>
+					<li class="login">
+						<div id="loginContainer"><a href="#" id="loginButton"><span>登录</span></a>
+							<div id="loginBox">
+								<form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">用户名</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">密码</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="登录">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住 密码</i></label>
+									</fieldset>
+									<span><a href="#">忘记密码了? </a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" style="margin-left: 65px;" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<ul>
+					<li><a class="active" href="index.html">主页</a></li>
+					<li><a href="movie.html">今日推荐</a></li>
+					<li><a href="character.html">经典人物</a></li>
+					<li><a href="hot.html" style="margin-left: 35px;">本周火热</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+				<!-- 脚本菜单 -->
+				<script>
+					$("span.menu").click(function () {
+						$(".top-nav ul").slideToggle("slow", function () {});
+					});
+				</script>
+				<!-- 脚本菜单-->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<!--脚本 -->
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+			<script>
+				new UISearch(document.getElementById('sb-search'));
+			</script>
+			<!-- 脚本 -->
+		</div>
+	</div>
+	<!--//header-->
+	<!--banner-->
+	<div class="banner">
+		<!-- 横幅文本滑块开始在这里 -->
+		<script src="js/responsiveslides.min.js"></script>
+		<script>
+			$(function () {
+				$("#slider3").responsiveSlides({
+					auto: true,
+					pager: true,
+					nav: true,
+					speed: 500,
+					namespace: "callbacks",
+					before: function () {
+						$('.events').append("<li>before event fired.</li>");
+					},
+					after: function () {
+						$('.events').append("<li>after event fired.</li>");
+					}
+				});
+			});
+		</script>
+		<!--//结束 -->
+		<div id="top" class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+					<div class="banner1">
+					</div>
+				</li>
+				<li>
+					<div class="banner1 banner2">
+					</div>
+				</li>
+				<li>
+					<div class="banner1 banner3">
+					</div>
+				</li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--欢迎-->
+	<div class="welcome">
+		<div class="container">
+			<h1 class="hdng">欢迎来到电影推荐</h1>
+			<p>这里的电影都值得你慢慢看</p>
+			<div class="welcome-info">
+				<div class="col-md-6 welcome-grids">
+					<img src="images/img1.jpg" alt="" />
+				</div>
+				<div class="col-md-6 welcome-grids">
+					<img src="images/img2.jpg" alt="" />
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>如果喜欢，请分享给身边的人</p>
+		</div>
+	</div>
+	<!--旗下-->
+	<div class="banner-bottom">
+		<div class="container">
+			<div class="col-md-4 banner-bottom-grids">
+				<h2>如果你喜欢电影</h2>
+			</div>
+			<div class="col-md-4 banner-bottom-grids">
+				<h4>请一直关注我们</h4>
+				<p>我们会一直更新好看的电影</p>
+			</div>
+			<div class="col-md-4 banner-bottom-grids">
+				<h4>如果有什么特别喜欢的电影</h4>
+				<p>也请你告诉我，无帮你推荐给更多的人</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--动漫-->
+	<div class="work">
+		<div class="col-md-8 work-grids work-img">
+		</div>
+		<div class="col-md-4 work-grids">
+			<h3>惊悚系列</h3>
+		<p>千万不要一个人看呦~</p>
+			<ul>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">佩琪小姐的奇幻城堡</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">鲨滩</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">釜山行</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">招魂2</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">屏住呼吸</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">黑暗天际</a></li>
+			</ul>
+
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<div class="work">
+		<div class="col-md-4 work-grids work-grids-left">
+			<h3>真实案件改编电影 世界篇 </h3>
+			<p>这些电影值得你看</p>
+			<ul>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">猫鼠游戏</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">银行大劫案</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">杀人回忆</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">鬼肢解</a></li>
+				<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">驱魔</a></li>
+			</ul>
+
+		</div>
+		<div class="col-md-8 work-grids work-img work-img-btm">
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+	<!--介绍-->
+	<div class="services">
+		<div class="container">
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								</div>
+								<h4>电影推荐</h4>
+								<p>电影就这些，请随意</p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+								</div>
+								<h4>照片</h4>
+								<p>美工没有修照片</p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+								</div>
+								<h4>如果喜欢</h4>
+								<p>请关注:电影推荐 </p>
+							</div>
+						</li>
+						<li>
+							<div class="services-grids">
+								<div class="srvc-img">
+									<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+								</div>
+								<h4>谢谢观看</h4>
+								<p>么么哒~</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--FlexSlider-->
+			<script defer src="js/jquery.flexslider.js"></script>
+			<script type="text/javascript">
+				$(window).load(function () {
+					$('.flexslider').flexslider({
+						animation: "slide",
+						start: function (slider) {
+							$('body').removeClass('loading');
+						}
+					});
+				});
+			</script>
+			<!--结束-->
+		</div>
+	</div>
+	<!--底部-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p>练手项目 &copy; 如有雷同,sorry.<a target="_blank" href="#">电影推荐</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--平滑滚动的上移-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

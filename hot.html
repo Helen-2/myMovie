@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>手绘大神</title>
+	<!-- 自定义主题文件  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- 自定义主题文件  -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<!-- js -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<!-- //js -->
+	<!--滚动-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<script src="js/menu_jquery.js"></script>
+</head>
+
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul>
+					<li><a href="account.html" style="margin-left: 55px;">注册</a></li>
+					<li class="login">
+						<div id="loginContainer"><a href="#" id="loginButton"><span>登录</span></a>
+							<div id="loginBox">
+								<form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">用户名</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">密码</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="登录">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住 密码</i></label>
+									</fieldset>
+									<span><a href="#">忘记密码了? </a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" style="margin-left: 65px;" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> <img src="images/menu.png" alt=""/> </span>
+				<ul>
+					<li><a href="index.html">主页</a></li>
+					<li><a href="movie.html">今日推荐</a></li>
+					<li><a href="character.html">经典人物</a></li>
+					<li><a class="active" href="hot.html" style="margin-left: 35px;">本周火热</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+				<!-- 脚本菜单 -->
+				<script>
+					$("span.menu").click(function () {
+						$(".top-nav ul").slideToggle("slow", function () {});
+					});
+				</script>
+				<!-- 脚本菜单 -->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+			<!-- 脚本 -->
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+			<script>
+				new UISearch(document.getElementById('sb-search'));
+			</script>
+			<!-- 脚本 -->
+		</div>
+	</div>
+	<!--//header-->
+	<!--banner-->
+	<div>
+		<video src="images/bg.mp4" autoplay loop></video>
+	</div>
+	<!--//banner-->
+	<!--news-->
+	<div class="news">
+		<div class="container">
+			<h1 class="hdng">当红演员</h1>
+			<h2 class="hdng-two">--</h2>
+			<div class="news-info">
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img30.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> 周冬雨</h5>
+						<p>1992年1月31日出生于河北省石家庄市，中国内地女演员，毕业于北京电影学院2011级表演系本科。2010年主演张艺谋导演电影《山楂树之恋》一举成名，被称为新一代“谋女郎”，获得第56届西班牙巴利亚多利德国际电影节最佳女演员奖、第14届中国电影华表奖优秀新人女演员奖。主演电影《宫锁沉香》、《同桌的妳》，电视剧《麻雀》等多部影视剧。2016年凭借《七月与安生》获得第53届金马奖最佳女主角
+						</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img31.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> 胡歌</h5>
+						<p>1982年9月20日出生于上海市徐汇区，中国内地演员、歌手、制片人。1996年，14岁的胡歌便成为上海教育电视台的小主持人，2005年毕业于上海戏剧学院表演系，同年在仙侠剧《仙剑奇侠传》中塑造了“李逍遥”一角，并演唱该剧插曲《六月的雨》《逍遥叹》。2006年8月遭受严重车祸，2007年6月复出。2009年主演仙侠剧《仙剑奇侠传三》。2010年主演的穿越剧《神话》在央视八套播出。2011年参演历史题材电影《辛亥革命》并提名大众电影百花奖“最佳新人奖”。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img32.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> 佟丽娅</h5>
+						<p>1984年8月8日出生于新疆伊犁，中国内地女演员。2002年，获得首届新疆小姐大赛亚军、全国影视新人选拔大赛金奖；2006年，学因出演尔冬升执导的情感剧《新不了情》而正式出道演艺圈；2008年，参演古装剧《母仪天下》，凭借“赵飞燕”一角走红；2011年，主演了首部电影《紫宅》；同年主演电视剧《宫锁心玉》热播；2012年，因出演电视剧《北京爱情故事》中的“沈冰”一角而人气飙升；2013年度亚洲偶像盛典凭借《唐山大地震》、《断奶》等，获年度“最具实力女演员”大奖。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img33.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> 张嘉译</h5>
+						<p>1970年4月8日生于陕西西安，中国影视演员。1990年，出演人生第一部电影《魔表》；1995年，主演电视剧《道北人》；2009年，凭借电视剧《蜗居》“宋思明”一角走红；2011年，参演《借枪》获第17届白玉兰最佳男演员奖；2012年，凭借《悬崖》获得首届中国(横店)影视金牛奖最佳男演员奖；2013年，凭借《浮沉》获第19届白玉兰“最佳男演员”奖；同年，凭借《营盘镇警事》、《悬崖》、《心术》、《浮沉》获得第29届中国电视剧飞天奖颁奖典礼的“优秀男演员”奖；2014年，主演电视剧《一仆二主》、《爷们儿》、《四十九日·祭》 、《大清盐商》；</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img34.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> 迪丽热巴</h5>
+						<p>迪丽热巴，1992年6月3日出生于新疆乌鲁木齐，毕业于上海戏剧学院表演系，中国内地女演员。2013年5月，出演个人首部电视剧《阿娜尔罕》，并因饰演女主角阿娜尔罕受到关注；2014年7月，出演古装玄幻电视剧《古剑奇谭》。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-6 news-grids">
+					<div class="news-grids-left">
+						<img src="images/img35.jpg" class="img-responsive" alt="/">
+					</div>
+					<div class="news-grids-right">
+						<h5> </h5>
+						<p>1990年4月20日出生于北京海淀区，中国内地影视男演员、歌手。2008年赴韩国留学期间在明洞逛街时，被韩国SM娱乐有限公司星探发掘成为旗下练习生。2012年4月以韩国男子组合EXO/EXO-M成员正式出道，组合内担任主唱、领舞、门面担当。2014年8月，个人微博单条评论创吉尼斯世界纪录，成为中文社交媒体上的首位吉尼斯世界纪录获得者。</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//news-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p>练手项目 &copy; 如有雷同,sorry.<a target="_blank" href="#">电影推荐</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--平滑滚动的上移-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

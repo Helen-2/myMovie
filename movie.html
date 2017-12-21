@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>大神简介</title>
+<!-- 自定义主题文件  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Stylish Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--自定义主题文件  -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- 滚动-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<script src="js/menu_jquery.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<div class="header">
+		<div class="container">
+			<div class="header-left">
+				<ul> 
+					<li><a href="account.html" style="margin-left: 55px;">注册</a></li>
+					<li class="login" >
+						<div id="loginContainer"><a href="#" id="loginButton"><span>登录</span></a>
+						    <div id="loginBox">                
+						        <form id="loginForm">
+									<fieldset id="body">
+										<fieldset>
+											<label for="email">用户名</label>
+											<input type="text" name="email" id="email">
+										</fieldset>
+										<fieldset>
+											<label for="password">密码</label>
+											<input type="password" name="password" id="password">
+										</fieldset>
+										<input type="submit" id="login" value="登录">
+										<label for="checkbox"><input type="checkbox" id="checkbox"> <i>记住 密码</i></label>
+									</fieldset>
+									<span><a href="#">忘记密码了?</a></span>
+								</form>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="logo">
+				<a href="index.html"> <img src="images/logo.png" style="margin-left: 65px;" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> <img src="images/menu.png" alt=""/> </span>
+				<ul>
+					<li><a href="index.html">主页</a></li>
+					<li><a class="active" href="movie.html">今日推荐</a></li>
+					<li><a href="character.html">经典人物</a></li>
+					<li><a href="hot.html" style="margin-left: 35px;">本周火热</a></li>
+					<li><a href="contact.html">联系我们</a></li>
+				</ul>
+				<!-- 脚本菜单 -->
+				<script>					
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle("slow" , function(){
+						});
+					});
+				</script>
+				<!-- 脚本菜单 -->
+			</div>
+			<div class="search-box">
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input class="sb-search-input" placeholder="search term..." type="search" name="search" id="search">
+						<input class="sb-search-submit" type="submit" value="">
+						<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+			</div>
+			<div class="clearfix"> </div>	
+			<!-- 脚本 -->
+			<script src="js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+		</div>
+	</div>	
+	<!--//header-->
+	<!--banner-->
+	<div>
+		<!--<video src="images/bg.mp4" autoplay loop></video>-->
+		<video src="video.mp4" autoplay loop controls style="width:100%"></video>
+	</div>	
+	<!--//banner-->
+	<!--about-->
+	<div class="about"> 
+		<div class="container">
+			<h1 class="hdng">今日首推</h1>
+			<div class="about-text">
+				<div class="col-md-6 about-text-left">
+					<img src="images/img5.jpg" class="img-responsive" alt=""/>
+				</div>
+				<div class="col-md-6 about-text-right">
+					<h4>英伦对决</h4>
+					<p>《英伦对决》是由中国、英国联合制作的动作惊悚片，由新西兰导演马丁·坎贝尔执导，成龙、皮尔斯·布鲁斯南领衔主演。该片于2017年9月30日在中国内地上映。《英伦对决》根据史蒂芬·莱瑟1992年出版的小说《中国人》改编，讲述了生活在英国的越南华裔关玉明的女儿在恐怖袭击中不幸遇难，为了给女儿讨回公道，独自踏上向恐怖组织复仇之路的故事</p>
+					<ul>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">成龙</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">皮尔斯·布鲁斯南</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="#">刘涛</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="about-slid"> 
+			<div class="container">
+				<div class="about-slid-info"> 
+					<h2>正义联盟</h2>
+					<p>《正义联盟》是由扎克·施奈德执导，克里斯·特里奥、乔斯·韦登编剧，本·阿弗莱克，亨利·卡维尔，盖尔·加朵等主演的动作科幻奇幻冒险电影。改编自DC漫画，是DC扩展宇宙的第五部影片。故事发生在《蝙蝠侠大战超人：正义黎明》之后，主要讲述了面对一个全新的世界威胁，超人、蝙蝠侠、神奇女侠、闪电侠、海王和钢骨六位英雄聚首，与这股未知的威胁对抗的故事。该片于2017年11月16日在中国内地部分影院提前点映，11月17日与北美同步上映。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//about-->
+	<div class="about-team">		
+		<div class="container">
+			<h3 class="title">精选电影</h3>
+			<div class="row team-row">
+				<div class="col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="images/img6.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">至爱梵高·星空之谜</a></h4>
+							<p>《至爱梵高·星空之谜》是多洛塔·科别拉、休·韦尔什曼执导的传记类动画影片，由道格拉斯·布斯、罗伯特·古拉奇克、西尔莎·罗南、艾莉诺·汤姆林森等出演，于2017年6月12日在安纳西国际动画电影节首映，同年12月8日在中国上映。
+该片讲述了梵高去世后，邮差的儿子阿尔芒为把梵高生前的一封信送到收信人手中而踏上了寻找画家生活轨迹的旅程，最终揭开梵高死亡之谜的故事。</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="images/img7.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">东方快车谋杀案</a></h4>
+							<p>《东方快车谋杀案》是由二十世纪福克斯电影公司制作，肯尼思·布拉纳执导，肯尼思·布拉纳、约翰尼·德普、佩内洛普·克鲁兹、米歇尔·菲佛、朱迪·丹奇主演的惊悚剧情片。该片改编自小说《东方快车谋杀案》，讲述了在大侦探波洛所坐的“东方快车”上，大富翁雷切特死在自己的包厢里，波洛最后成功地解开了一宗谋杀案谜团的故事。该片于2017年11月10日在中国大陆及北美地区公映。</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="images/img8.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">追龙</a></h4>
+							<p>《追龙》是由银都机构有限公司出品的动作犯罪片，由王晶、关智耀执导，甄子丹领衔主演、刘德华特别演出、郑则仕、姜皓文、刘浩龙、胡然、徐冬冬等联合主演。该片于2017年9月30日在中国内地上映。该片讲述了能打敢拼的伍世豪偷渡来到香港为了长久生存之道，他与心思缜密的探长雷洛联手制霸香港的故事。</p>						
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 team-grids">
+					<div class="thumbnail team-thmnl">
+						<img src="images/img9.jpg" class="img-responsive zoom-img" alt="...">
+						<div class="caption">
+							<h4><a href="#">神奇女侠</a></h4>
+							<p>《神奇女侠》是由美国华纳兄弟影片公司出品的奇幻动作片，由派蒂·杰金斯执导，盖尔·加朵、克里斯·派恩、康妮·尼尔森、罗宾·怀特联合主演。该片根据DC漫画改编，故事背景设定在第一次世界大战期间，讲述了亚马逊公主戴安娜·普林斯取得奥林匹斯众神赐予的武器与装备，化身神奇女侠，与空军上尉史蒂夫·特雷弗来到人类世界，捍卫和平、拯救世界的故事。该片于2017年6月2日在美国、中国内地同步上映。2017年12月，荣获美国电影学会2017十佳影片。</p>						
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-left">
+				<p>练手项目 &copy; 如有雷同,sorry.<a target="_blank" href="#">电影推荐</a></p>
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#" class="fb"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#" class="gg"></a></li>
+					<li><a href="#" class="pn"></a></li>					
+				</ul>	
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--平滑滚动的上移-->
+	<script type="text/javascript">
+		$(document).ready(function() {		
+			$().UItoTop({ easingType: 'easeOutQuart' });		
+		});
+	</script>	
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
